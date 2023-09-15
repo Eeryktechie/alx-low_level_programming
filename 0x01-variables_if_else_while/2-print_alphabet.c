@@ -1,17 +1,15 @@
 #include <stdio.h>
 
-int main(void)
-{
-    //declare a variable
-    char alphabet;
+int main() {
+    char letter = 'a';  // Start with 'a'
 
-    for (alphabet = 'a'; alphabet <= 'z' ; alphabet++)
-    {
-        // print the value of the variable 
-        putchar(alphabet);
-
+    // Loop through the alphabet and print each letter
+    while (letter <= 'z') {
+        putchar(letter);
+        letter++;  // Move to the next letter
     }
 
-    putchar('\n');
-    return (0);
+    putchar('\n');  // Print a new line
+
+    return 0;
 }
