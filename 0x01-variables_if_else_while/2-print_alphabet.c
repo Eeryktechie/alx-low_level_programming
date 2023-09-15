@@ -1,15 +1,22 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
-int main() {
-    char letter = 'a';  // Start with 'a'
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 
-    // Loop through the alphabet and print each letter
-    while (letter <= 'z') {
-        putchar(letter);
-        letter++;  // Move to the next letter
+int main(void)
+{
+    char low;
+
+    for (low = 'a'; low <= 'z'; low++) {
+        putchar(low);
     }
+    
+    putchar('\n');
 
-    putchar('\n');  // Print a new line
-
-    return 0;
+    return (0);
 }
