@@ -3,23 +3,18 @@
 #include <time.h>
 
 /**
- * main - Entry point
+ * main - Prints the alphabet in lowercase.
  *
- * Description: Prints the lowercase alphabet followed by a newline.
- *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
-
 int main(void)
 {
-char low;
+	char letter;
 
-for (low = 'a'; low <= 'z'; low++)
-{
- putchar(low);
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
+
+	putchar('\n');
+
+	return (0);
 }
-putchar('\n');
-
-return (0);
-}
-
